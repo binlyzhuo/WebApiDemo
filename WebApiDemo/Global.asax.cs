@@ -23,6 +23,7 @@ namespace WebApiDemo
             RouteConfig.RegisterRoutes(RouteTable.Routes);  
             
             GlobalConfiguration.Configuration.Filters.Add(new TimingActionFilter());
+            GlobalConfiguration.Configuration.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
         }
     }
 }
